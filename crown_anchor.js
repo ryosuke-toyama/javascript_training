@@ -29,9 +29,9 @@ while(funds > 0 && funds < 100){
     }while(remaining > 0);
   }
   funds = funds - totalBet;
-  console.log(`→賭け金：${totalBet}(` +
-        Object.keys(bets).map(face => `${face}：${bets[face]}`).join(', ') +
-        ")");
+  console.log(`→賭け金：${totalBet}ペンス(` +
+  Object.keys(bets).map(face => `${face}：${bets[face]}`).join(', ') +
+  ")");
 
   //サイコロを降る
   const hand = [];
