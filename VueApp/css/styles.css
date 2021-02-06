@@ -1,6 +1,5 @@
 .to_top{
   display: block;
-  width: 100px;
   height: 30px;
   line-height: 30px;
   text-align: center;
@@ -14,4 +13,44 @@
 
 .to_top:hover{
   opacity: .8;
+}
+
+body{
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+.container{
+  width: 300px;
+  margin: auto;
+}
+
+#app h1{
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding:  16px 0;
+}
+
+#app li{
+  line-height: 1.5;
+}
+
+#app input[type="text"]{
+  padding: 2px;
+}
+
+.command{
+  font-size: 12px;
+  cursor: pointer;
+  color: #08c;
+}
+
+#app ul{
+  padding: 0;
+  list-style: none;
+}
+
+#app li > span.done{
+  text-decoration: line-through;
+  color: #bbb;
 }
