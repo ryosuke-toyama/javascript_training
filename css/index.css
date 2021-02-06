@@ -1,0 +1,35 @@
+.to_vue_app{
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.to_vue_app:hover{
+  opacity: .8;
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper{
+  height: 1000px;
+  width: 1000px;
+  border: 1px solid black;
+  margin: 50px;
+}
+#box{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
+#box:hover{
+  opacity: .8;
+}
