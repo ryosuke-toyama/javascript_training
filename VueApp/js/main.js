@@ -17,6 +17,7 @@
     methods: {
       countUp: function(){
       this.count++;
+      this.$emit('increment');
       }
     }
   });
@@ -37,7 +38,8 @@
       }, {
         title: 'task 3',
         isDone: true
-      }]
+      }],
+      total: 0
     },
     methods: {
       addItem: function(){
@@ -58,6 +60,9 @@
           return;
         }
         this.todos = this.remaining;
+      },
+      incrementTotal: function(){
+        this.total++;
       }
     },
     computed: {

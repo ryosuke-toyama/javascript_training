@@ -25,9 +25,10 @@
         <input type="text" v-model="newItem">
         <input type="submit" value="Add">
       </form>
-      <like-compornent message="Great"></like-compornent>
-      <like-compornent message="Awesome"></like-compornent>
-      <like-compornent></like-compornent>
+      <like-compornent message="Great" @increment="incrementTotal"></like-compornent>
+      <like-compornent message="Awesome" @increment="incrementTotal"></like-compornent>
+      <like-compornent @increment="incrementTotal"></like-compornent>
+      <p>Total Likes: {{ total }}</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
