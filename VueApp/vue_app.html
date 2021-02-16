@@ -29,9 +29,25 @@
       <like-compornent message="Awesome" @increment="incrementTotal"></like-compornent>
       <like-compornent @increment="incrementTotal"></like-compornent>
       <p>Total Likes: {{ total }}</p>
-    </div>
+    </div><!-- //#app -->
+
+    <div id="vue_area">
+      <p>Counter: {{ counter }}</p>      
+    </div><!-- //#vue_area -->
+
+    <div id="event-handling">
+      <p>{{ message }}</p>
+      <button @click="reverseMessage">Reverse Message</button>
+    </div><!-- //#event-handling -->
+
+    <div id="two-way-binding">
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div><!-- two-way-binding -->
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/vue.js"></script>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

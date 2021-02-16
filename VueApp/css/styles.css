@@ -25,6 +25,11 @@ body{
   margin: auto;
 }
 
+#app{
+  background-color: #ddd;
+  display: none;
+}
+
 #app h1{
   font-size: 16px;
   border-bottom: 1px solid #ddd;
